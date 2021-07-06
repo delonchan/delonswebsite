@@ -1,0 +1,633 @@
+body {
+    font-family:'DM Mono', monospace;
+    font-style: normal;
+    background-color: #fdfbed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    display: flex; 
+    flex-direction: row;
+}
+
+.nav-links {
+    font-size: 300%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    font-weight: bolder; 
+    list-style: none; 
+    padding: 0; 
+    margin:20px 0px 40px 0px; 
+}
+
+#delon{
+    font-size:60px; 
+    padding: 0px; 
+    margin: 0px 0px 20px 0px;
+}
+
+.nav-link{
+    width: 100%;
+    text-align: center;
+    /* padding: 40px 0px;  */
+    font-size: 80%;
+    list-style: none;
+    text-decoration: none; 
+    color: black; 
+    float: center;
+} 
+
+a {
+    text-decoration:none;
+    color: white; 
+}
+a:hover {
+    color: #878787;
+
+}
+
+.main {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: baseline;
+    padding: 0vh 10vh 0vh 5vh;
+}
+
+.left-half-container {
+    display: flex; 
+    flex-direction: column;
+    width: 50%;
+    /* padding: 2.5%; */
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    max-width: 35%; 
+    height: auto;
+    border-radius: 50%;  
+    margin: 0px 0px 40px 0px; 
+}
+
+.main-subtitles {
+    max-width: 70%;
+    /* display: flex;
+    align-items: center; */
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.right-half-container {
+    width: 50%;
+    /* padding: 2.5%;  */
+    align-self: center;
+    display: flex; 
+    flex-wrap: wrap;
+    height: auto;
+    
+}
+
+
+.right-half-main-box {
+    /* background-color: blue;  */
+    width: 100%;
+    padding: 2.5%;
+    border: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+
+.box-black {
+    background-color: black;  
+    width: 36vh;
+    height: 36vh;
+    /* padding: 15%; */
+    border: 0;
+    margin: 2.5%; 
+    justify-content: center;
+    padding-bottom: 25%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: 30vh;
+    height: 30vh; */
+    /* display: block;  */
+    box-sizing: border-box;
+
+    
+}
+
+.box-gray {
+    background-color: #707070;  
+    width: 36vh;
+    height: 36vh;
+    /* padding: 15%; */
+    border: 0;
+    margin: 2.5%;
+    justify-content: center;
+    padding-bottom: 25%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: 30vh;
+    height: 30vh; */
+    /* display: block;  */
+    box-sizing: border-box;
+    
+}
+
+
+.list { 
+    width: 100%;
+    height: 15vh;
+    font-size: 2.4vh;
+    list-style-type: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: white; 
+    outline: 1px;
+outline-color: white;
+outline-style: solid;
+color: white; 
+}
+
+.list li {
+outline: 1px;
+outline-color: white;
+outline-style: solid;
+color: white; 
+padding: 02px 20px 02px 20px;
+}
+
+.list p {
+color: white; 
+padding: 02px 20px 02px 20px;
+text-decoration: italic;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+/* #projects-text, #blog-text, #case-studies-text, #resume-text {
+    
+} */
+#projects-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px; 
+}
+
+#blog-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+#case-studies-text{
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+#resume-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 232px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+.title {
+    font-size: 4.5vh;
+    color: white;
+    outline: 1px;
+    outline-color: white;
+    
+}
+
+.hidden {
+    visibility: hidden;
+    outline: 1px;
+    outline-color: black;
+    background-color: black;
+}
+
+
+/* How your site will look on mobile */
+@media only screen and (max-width: 768px) {
+    .main-nav {
+        display: flex; 
+        flex-direction: column;
+    }
+   
+    #delon {
+        font-size: 32px;
+        text-align: center; 
+        margin:0px; 
+        color: white;
+        background-color:black;
+    }
+   
+    .nav-links {
+     display: flex;
+     flex-direction: column;
+     justify-content: center; 
+     text-align: center;
+     width: auto; 
+     font-size: 35px;
+     margin: 0; 
+    }
+    .nav-link{
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    }
+    .main {
+        display: block; 
+        justify-content: center;
+        padding: 0vh; 
+        margin: 0vh;
+    }
+    
+    .left-half-container {
+        display: block; 
+        flex-direction: column;
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-image {
+        display: none; 
+    }
+
+
+
+    .main-subtitles {
+        max-width: 95%;
+        display: block;
+        text-align: center;
+        align-items: center;
+        font-size: 100%;
+        margin: auto;
+        max-height: 50%;
+    }
+    .right-half-container {
+        width: 100%;
+        /* padding: 2.5%;  */
+        align-self: center;
+        display: flex; 
+        flex-wrap: wrap;
+        height: auto;
+        
+        justify-content: center;
+    
+    }
+    
+    .right-half-main-box {
+        /* background-color: blue;  */
+        width: 100%;
+        padding: 2.5%;
+        border: 0;
+        margin: 0;
+        display: flex; 
+        flex-wrap: wrap;
+        
+    }
+    #projects-text {
+        position: relative; 
+        /* margin: 6vh 10vh 0vh 0vh;  */
+        top: 20px ; 
+        bottom : 0px; 
+        left: 0px; 
+        right: 0px; 
+    }
+    
+    .title {
+        font-size: 3vh;
+        color: white;
+        outline: 1px;
+        outline-color: white;
+        
+    }
+
+    #blog-text {
+        position: relative; 
+        /* margin: 6vh 10vh 0vh 0vh;  */
+        top: 20px ; 
+        bottom : 0px; 
+        left: 0px; 
+        right: 0px; 
+    }
+    
+    #case-studies-text{
+        position: relative; 
+        /* margin: 6vh 10vh 0vh 0vh;  */
+        top: 20px ; 
+        bottom : 0px; 
+        left: 0px; 
+        right: 0px;  
+    }
+    
+    #resume-text {
+        position: relative; 
+        /* margin: 6vh 10vh 0vh 0vh;  */
+        top: 100px ; 
+        bottom : 0px; 
+        left: 0px; 
+        right: 0px; 
+    }
+
+    
+  }
+
+
+
+
+
+/* How it will look on ipad landscape*/
+  @media only screen
+  and (min-device-width : 769px)
+  and (max-device-width : 1380px)
+  and (orientation:landscape) 
+{
+    /* iPad landscape style here */
+body {
+    font-family:'DM Mono', monospace;
+    font-style: normal;
+    background-color: #fdfbed;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    display: flex; 
+    flex-direction: row;
+}
+
+.nav-links {
+    font-size: 300%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    font-weight: bolder; 
+    list-style: none; 
+    padding: 0; 
+    margin:20px 0px 40px 0px; 
+}
+
+#delon{
+    font-size:300%; 
+    padding: 0px; 
+    margin: 0px 0px 20px 0px;
+}
+
+.nav-link{
+    width: 100%;
+    text-align: center;
+    /* padding: 40px 0px;  */
+    font-size: 80%;
+    list-style: none;
+    text-decoration: none; 
+    color: black; 
+    float: center;
+} 
+
+a {
+    text-decoration:none;
+    color: white; 
+}
+a:hover {
+    color: #878787;
+
+}
+
+.main {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    align-items: baseline;
+    padding: 0vh 10vh 0vh 5vh;
+}
+
+.left-half-container {
+    display: flex; 
+    flex-direction: column;
+    width: 50%;
+    /* padding: 2.5%; */
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image {
+    max-width: 35%; 
+    height: auto;
+    border-radius: 50%;  
+    margin: 0px 0px 40px 0px; 
+}
+
+.main-subtitles {
+    max-width: 70%;
+    /* display: flex;
+    align-items: center; */
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.right-half-container {
+    width: 50%;
+    /* padding: 2.5%;  */
+    align-self: center;
+    display: flex; 
+    flex-wrap: wrap;
+    height: auto;
+    
+}
+
+
+.right-half-main-box {
+    /* background-color: blue;  */
+    width: 100%;
+    padding: 2.5%;
+    border: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    
+}
+
+.box-black {
+    background-color: black;  
+    width: 39%;
+    height: 39%;
+    /* padding: 15%; */
+    border: 0;
+    margin: 2.5%; 
+    justify-content: center;
+    padding-bottom: 25%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: 30vh;
+    height: 30vh; */
+    /* display: block;  */
+    box-sizing: border-box;
+
+    
+}
+
+.box-gray {
+    background-color: #707070;  
+    width: 39%;
+    height: 39%;
+    /* padding: 15%; */
+    border: 0;
+    margin: 2.5%;
+    justify-content: center;
+    padding-bottom: 25%;
+    border-radius: 25px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* width: 30vh;
+    height: 30vh; */
+    /* display: block;  */
+    box-sizing: border-box;
+    
+}
+
+
+.list { 
+    width: 100%;
+    height: 15vh;
+    font-size: 80%;
+    list-style-type: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: white; 
+    outline: 1px;
+outline-color: white;
+outline-style: solid;
+color: white; 
+}
+
+.list li {
+outline: 1px;
+outline-color: white;
+outline-style: solid;
+color: white; 
+padding: 02px 20px 02px 20px;
+}
+
+.list p {
+color: white; 
+padding: 02px 20px 02px 20px;
+text-decoration: italic;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+/* #projects-text, #blog-text, #case-studies-text, #resume-text {
+    
+} */
+#projects-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px; 
+}
+
+#blog-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+#case-studies-text{
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 40px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+#resume-text {
+    position: relative; 
+    /* margin: 6vh 10vh 0vh 0vh;  */
+    top: 232px ; 
+    bottom : 0px; 
+    left: 0px; 
+    right: 0px;
+}
+
+.title {
+    font-size: 140%;
+    color: white;
+    outline: 1px;
+    outline-color: white;
+    
+}
+
+.hidden {
+    visibility: hidden;
+    outline: 1px;
+    outline-color: black;
+    background-color: black;
+}
+}
+
+
+/* How it will look on ipad portrait */
+/* @media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{ */
+    /* iPad portrait style here */
+/* } */ 

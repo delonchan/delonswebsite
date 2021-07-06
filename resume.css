@@ -1,0 +1,168 @@
+/*Fixed Design starts*/
+body {
+    font-family:'DM Mono', monospace;
+    font-style: normal;
+    background-color: #fdfbed;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-links {
+    font-size: 40px;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    font-weight: bolder; 
+    list-style: none; 
+    padding: 0; 
+    margin:30px 0px 40px 0px; 
+}
+
+.nav-link{
+    width: 100%;
+    text-align: center;
+    /* padding: 40px 0px;  */
+    font-size: 80%;
+    list-style: none;
+    text-decoration: none; 
+    color: black; 
+    float: center;
+} 
+
+a {
+    text-decoration:none;
+    color: white; 
+}
+a:hover {
+    color: #878787;
+
+}
+/*Fixed Design ends*/
+
+
+
+#nav-link-resume {
+    color: #878787;
+}
+
+.container {
+    justify-content: center;
+    margin: 80px 30%;
+    display: block;
+    align-items: center;
+}
+
+h2{
+    font-size: 6vh;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 2vh;
+    line-height: 1.75;
+}
+
+
+
+#box1 {
+    background-color: rgb(44, 44, 44);
+    width:10vh;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1.5vh;
+    margin: 0px 0px 40px 10px; 
+    }
+.viewer {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* How your site will look on mobile */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+     display: flex;
+     flex-direction: column;
+     justify-content: center; 
+     text-align: center;
+     width: auto; 
+     font-size: 35px;
+     margin: 0; 
+    }
+    .nav-link{
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    }
+
+    /*Fixed Design ends*/
+
+.section-title{
+    padding: 0px 0px 0px 0px;
+    font-size: 100px;
+    text-align: center;
+    margin: 30px; 
+    
+ }
+ 
+ #nav-link-resume {
+     color: #878787;
+ }
+ 
+ .boxes-links {
+     text-decoration:none;
+     color: black; 
+ }
+ 
+ img {
+     width: 100%; 
+     height: 20%; 
+     object-fit: cover;
+ }
+ 
+ .container {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0px;
+     margin: 0px;
+     justify-content:center;
+ }
+ 
+
+h2{
+    font-size: 4vh;
+    font-weight: bolder;
+    margin: 20px;
+}
+
+p{
+    font-size: 2vh;
+    line-height: 1.75;
+}
+
+.textbody {
+    margin: 20px; 
+}
+#box1 {
+    background-color: rgb(71, 70, 70);
+    width:10vh;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1.5vh;
+    margin: 0px 20px 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.viewer {
+    visibility: hidden;
+    width: 100%; 
+}
+}
