@@ -8,7 +8,7 @@ body {
 }
 
 .nav-links {
-    font-size: 40px;
+    font-size: 300%;
     width: 100%;
     display: flex; 
     flex-direction: row; 
@@ -42,7 +42,7 @@ a:hover {
 
 .section-title{
    padding: 0px 0px 0px 150px;
-   font-size: 100px;
+   font-size: 500%;
    margin: 67px 0px 47px 0px; 
 }
 
@@ -91,6 +91,7 @@ img {
 
 .box-title {
     margin: 15px 0px; 
+    font-size: 110%;
 }
 
 
@@ -116,10 +117,7 @@ img {
     /*Fixed Design ends*/
 
 .section-title{
-    padding: 0px 0px 0px 0px;
-    font-size: 100px;
-    text-align: center;
-    margin: 30px; 
+    display: none;
     
  }
  
@@ -143,7 +141,7 @@ img {
      flex-wrap: wrap;
      padding: 0px; 
      margin: 0px;
-     justify-content:space-between;
+     justify-content:center;
  }
  
  .box {
@@ -170,3 +168,99 @@ img {
      margin: 15px 0px; 
  }
   }
+
+@media (min-width: 769px) and (max-width: 1200px){
+    body {
+        font-family:'DM Mono', monospace;
+        font-style: normal;
+        background-color: #fdfbed;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav-links {
+        font-size: 200%;
+        width: 100%;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-evenly;
+        font-weight: bolder; 
+        list-style: none; 
+        padding: 0; 
+        margin:30px 0px 40px 0px; 
+    }
+    
+    .nav-link{
+        width: 100%;
+        text-align: center;
+        /* padding: 40px 0px;  */
+        font-size: 80%;
+        list-style: none;
+        text-decoration: none; 
+        color: black; 
+        float: center;
+    } 
+    
+    a {
+        text-decoration:none;
+        color: white; 
+    }
+    a:hover {
+        color: #878787;
+    
+    }
+    /*Fixed Design ends*/
+    
+    .section-title{
+       padding: 0px 0px 0px 150px;
+       font-size: 300%;
+       margin: 67px 0px 47px 0px; 
+    }
+    
+    #nav-link-blog {
+        color: #878787;
+    }
+    
+    .boxes-links {
+        text-decoration:none;
+        color: black; 
+    }
+    
+    img {
+        width: 100%; 
+        height: 60%; 
+        object-fit: cover;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 187px 0px 187px;
+        margin: 0px;
+        justify-content:space-between;
+    }
+    
+    .box {
+        height: 36vh; 
+        width: 36vh; 
+        border-radius: 25px;
+        border: 5px solid rgb(8, 8, 8);
+        padding: 20px; 
+        overflow: hidden;
+        margin: 4.6vh; 
+    }
+    
+    .box-preview  {
+        font-size: 14px;
+        margin: 0px 0px 0px 0px; 
+        color: #686868;
+        height: 48px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+    
+    
+    .box-title {
+        margin: 15px 0px; 
+    }
+}
