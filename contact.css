@@ -180,6 +180,11 @@ a:hover {
     padding: 0;
     margin: 0;
     }
+
+    #nav-link-contact {
+        color: #878787;
+    }
+    
     .main {
         display: block; 
         justify-content: center;
@@ -337,7 +342,7 @@ a:hover {
        margin: 67px 0px 47px 0px; 
     }
     
-    #nav-link-blog {
+    #nav-link-contact {
         color: #878787;
     }
     
